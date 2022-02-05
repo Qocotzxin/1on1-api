@@ -1,0 +1,11 @@
+{
+  "name": "1on1-api",
+  "version": "0.1.0",
+  "description": "api for 1on1 video calls app",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Etchebarne",
+  "license": "ISC"
+}
