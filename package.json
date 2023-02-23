@@ -1,0 +1,38 @@
+{
+  "name": "1on1-api",
+  "version": "0.1.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "index.ts",
+  "directories": {
+    "test": "test",
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.ts"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "build": "tsc -w",
+    "dev": "nodemon build/index.js",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/env": "^4.2.0",
+    "@fastify/sensible": "^5.2.0",
+    "fastify": "^4.13.0",
+    "fastify-cli": "^5.7.1",
+    "fastify-plugin": "^4.5.0",
+    "twilio": "^4.7.2"
+  },
+  "devDependencies": {
+    "@fastify/type-provider-json-schema-to-ts": "^2.2.2",
+    "@types/node": "^18.14.0",
+    "json-schema-to-ts": "^2.6.2",
+    "nodemon": "^2.0.20",
+    "tap": "^16.3.4",
+    "typescript": "^4.9.5"
+  },
+  "type": "module"
+}
