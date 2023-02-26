@@ -1,7 +1,4 @@
-import { RouteShorthandOptions } from "fastify";
-import { FromSchema } from "json-schema-to-ts";
-
-const responseSchema = {
+export const responseSchema = {
   type: "object",
   required: ["ok", "data", "message"],
   properties: {
@@ -31,12 +28,9 @@ const responseSchema = {
   },
 } as const;
 
-export const getSchema: RouteShorthandOptions = {
-  schema: {
-    response: {
-      default: responseSchema,
-    },
+export const queryStringSchema = {
+  type: "object",
+  properties: {
+    room: { type: "string" },
   },
-};
-
-export type GetAccessTokenSchema = FromSchema<typeof responseSchema>;
+} as const;

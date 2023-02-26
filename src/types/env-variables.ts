@@ -2,6 +2,7 @@ export const envVariablesSchema = {
   type: "object",
   required: [
     "PORT",
+    "ENVIRONMENT",
     "ORIGIN_BASEPATH",
     "TWILIO_ACCOUNT_SID",
     "TWILIO_AUTH_TOKEN",
@@ -12,6 +13,9 @@ export const envVariablesSchema = {
     PORT: {
       type: "string",
       default: 3001,
+    },
+    ENVIRONMENT: {
+      type: "string",
     },
     ORIGIN_BASEPATH: {
       type: "string",
